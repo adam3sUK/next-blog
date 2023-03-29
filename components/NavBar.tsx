@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeSwtich from "./ThemeSwitch";
 
 const Navbar = () => {
   return (
@@ -15,7 +16,14 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      <ThemeSwtich />
       <style jsx>{`
+          nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+          }
           ul {
             list-style-type: none;
             padding: 0;
